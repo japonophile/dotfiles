@@ -31,6 +31,9 @@ set scrolloff=3              " keep a few lines for context
 set list                     " display spaces
 set listchars=trail:•        " display trailing spaces as bullet (U+2022)
 
+set laststatus=2             " display status line always
+"set ruler                    " display ruler: useless when using statusline
+
 let mapleader=","
 
 " Unmap arrow keys
@@ -101,6 +104,8 @@ endif
 au BufNewFile,BufRead *.ino set filetype=c
 au BufNewFile,BufRead *.sdf set filetype=xml
 au BufNewFile,BufRead *.launch set filetype=xml
+au BufNewFile,BufRead *.pxi set filetype=clojure
+au BufNewFile,BufRead *.cljc set filetype=clojure
 
 
 
