@@ -1,3 +1,30 @@
 [submodule ".vim/bundle/base16-vim"]
 	path = .vim/bundle/base16-vim
 	url = https://github.com/chriskempson/base16-vim
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule ".vim/bundle/rainbow_parentheses.vim"]
+	path = .vim/bundle/rainbow_parentheses.vim
+	url = https://github.com/kien/rainbow_parentheses.vim.git
+[submodule ".vim/bundle/vim-clojure-highlight"]
+	path = .vim/bundle/vim-clojure-highlight
+	url = https://github.com/guns/vim-clojure-highlight.git
+[submodule ".vim/bundle/vim-clojure-static"]
+	path = .vim/bundle/vim-clojure-static
+	url = git://github.com/guns/vim-clojure-static.git
+[submodule ".vim/bundle/vim-fireplace"]
+	path = .vim/bundle/vim-fireplace
+	url = git://github.com/tpope/vim-fireplace.git
+[submodule ".vim/bundle/vim-fugitive"]
+	path = .vim/bundle/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule ".vim/bundle/vim-misc"]
+	path = .vim/bundle/vim-misc
+	url = https://github.com/xolox/vim-misc
+[submodule ".vim/bundle/vim-notes"]
+	path = .vim/bundle/vim-notes
+	url = https://github.com/xolox/vim-notes
+[submodule ".vim/opt/loupe"]
+	path = .vim/opt/loupe
+	url = https://github.com/wincent/loupe.git
