@@ -105,7 +105,6 @@ au BufNewFile,BufRead *.ino set filetype=c
 au BufNewFile,BufRead *.sdf set filetype=xml
 au BufNewFile,BufRead *.launch set filetype=xml
 au BufNewFile,BufRead *.pxi set filetype=clojure
-au BufNewFile,BufRead *.cljc set filetype=clojure
 
 
 
