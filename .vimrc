@@ -14,6 +14,7 @@ set tabstop=4                " size of a hard tabstop
 set shiftwidth=4             " size of an "indent"
 set smarttab                 " make "tab" insert indents instead of tabs at the beginning of a line
 set expandtab                " always uses spaces instead of tab characters
+set backspace=indent,start   " allow deleting beyond indent and start of insert buffer (not EOL)
 
 set number                   " display line numbers
 set relativenumber           " display relative line numbers
