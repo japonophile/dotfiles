@@ -55,6 +55,8 @@ nnoremap <leader>x :nohl<CR>
 nnoremap <C-w>: :vsplit<CR><C-w><C-w>
 nnoremap <C-w>- :split<CR><C-w><C-w>
 
+nnoremap <C-S-F> :Ack <c-r>=expand("<cword>")<CR>
+
 " shortcuts for executing Clojure in vim (through Fireplace)
 nnoremap <leader>e :Eval<CR>
 "nnoremap E :%Eval<CR>
