@@ -58,6 +58,8 @@ nmap <leader>x <Plug>(LoupeClearHighlight)
 nnoremap <C-w>: :vsplit<CR><C-w><C-w>
 nnoremap <C-w>- :split<CR><C-w><C-w>
 
+nnoremap <C-S-F> :Ack <c-r>=expand("<cword>")<CR>
+
 " shortcuts for executing Clojure in vim (through Fireplace)
 nnoremap <leader>e :Eval<CR>
 "nnoremap E :%Eval<CR>
@@ -95,7 +97,8 @@ let g:rbpt_colorpairs = [
     \ ['darkgreen',   'RoyalBlue3'],
     \ ]
 
-let g:notes_directories = ['~/Dropbox/Notes']
+let g:notes_directories = ['~/Dropbox/Notes/Journal', '~/Dropbox/Notes/howto', '~/Dropbox/Notes/personal', '~/Dropbox/Notes/learning', '~/Dropbox/Notes/kids', '~/Dropbox/Notes/entrepreneur', '~/Dropbox/Notes/GE']
+let g:notes_conceal_url = 0
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif

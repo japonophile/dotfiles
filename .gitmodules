@@ -25,9 +25,12 @@
 [submodule ".vim/bundle/vim-notes"]
 	path = .vim/bundle/vim-notes
 	url = https://github.com/xolox/vim-notes
-[submodule ".vim/opt/loupe"]
-	path = .vim/opt/loupe
-	url = https://github.com/wincent/loupe.git
 [submodule ".vim/bundle/loupe"]
 	path = .vim/bundle/loupe
 	url = https://github.com/wincent/loupe.git
+[submodule ".vim/bundle/ack.vim"]
+	path = .vim/bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
+[submodule ".vim/bundle/vim-commentary"]
+	path = .vim/bundle/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
