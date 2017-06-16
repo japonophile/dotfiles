@@ -28,3 +28,6 @@
 [submodule ".vim/opt/loupe"]
 	path = .vim/opt/loupe
 	url = https://github.com/wincent/loupe.git
+[submodule ".vim/bundle/loupe"]
+	path = .vim/bundle/loupe
+	url = https://github.com/wincent/loupe.git

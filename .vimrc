@@ -30,7 +30,7 @@ set highlight=c:LineNr       " highlight the number of the current line (not wor
 set scrolloff=3              " keep a few lines for context
 
 set list                     " display spaces
-set listchars=trail:•        " display trailing spaces as bullet (U+2022)
+set listchars=trail:-        " display trailing spaces as bullet (U+2022)
 
 set laststatus=2             " display status line always
 "set ruler                    " display ruler: useless when using statusline
@@ -50,7 +50,10 @@ inoremap <Right> <Nop>
 " shortcut to follow link C-] does not work on Azerty
 nnoremap <C-T> <C-]>
 
-nnoremap <leader>x :nohl<CR>
+" let g:LoupeLoaded=1    " to avoid loading Loupe plugin
+let g:LoupeVeryMagic=0   " do not enable 'very magic' mode by default
+" nnoremap <leader>x :nohl<CR>
+nmap <leader>x <Plug>(LoupeClearHighlight)
 
 nnoremap <C-w>: :vsplit<CR><C-w><C-w>
 nnoremap <C-w>- :split<CR><C-w><C-w>
@@ -107,5 +110,7 @@ au BufNewFile,BufRead *.sdf set filetype=xml
 au BufNewFile,BufRead *.launch set filetype=xml
 au BufNewFile,BufRead *.pxi set filetype=clojure
 
-
+" highlight current search in green
+highlight Search gui=underline ctermfg=green ctermbg=black cterm=bold,underline term=underline
+highlight IncSearch guibg=green ctermbg=green term=underline
 
