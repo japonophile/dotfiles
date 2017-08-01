@@ -34,3 +34,6 @@
 [submodule ".vim/bundle/vim-commentary"]
 	path = .vim/bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule ".vim/bundle/python-mode"]
+	path = .vim/bundle/python-mode
+	url = https://github.com/python-mode/python-mode.git
