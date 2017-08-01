@@ -5,7 +5,7 @@ call pathogen#helptags()
 syntax on
 filetype plugin indent on
 
-set foldmethod=indent        " fold based on indentation (alt: syntax, but does not work with Clojure)
+"set foldmethod=indent        " fold based on indentation (alt: syntax, but does not work with Clojure)
 
 set wildmenu                 " show selection menu for :find command
 set path+=**                 " search for files in all subdirectories
@@ -97,14 +97,15 @@ let g:rbpt_colorpairs = [
     \ ['darkgreen',   'RoyalBlue3'],
     \ ]
 
-let g:notes_directories = ['~/Dropbox/Notes/Journal', '~/Dropbox/Notes/howto', '~/Dropbox/Notes/personal', '~/Dropbox/Notes/learning', '~/Dropbox/Notes/kids', '~/Dropbox/Notes/entrepreneur', '~/Dropbox/Notes/GE']
+let g:notes_directories = ['~/Dropbox/Notes/LPixel']
 let g:notes_conceal_url = 0
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
 if has('linebreak')
-    let &showbreak='⤷'
+    "let &showbreak='⤷'
+    let &showbreak='+'
 endif
 
 " filetype mappings
@@ -116,4 +117,7 @@ au BufNewFile,BufRead *.pxi set filetype=clojure
 " highlight current search in green
 highlight Search gui=underline ctermfg=green ctermbg=black cterm=bold,underline term=underline
 highlight IncSearch guibg=green ctermbg=green term=underline
+
+" NERDTree settings
+let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']
 
