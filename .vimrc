@@ -121,3 +121,6 @@ highlight IncSearch guibg=green ctermbg=green term=underline
 " NERDTree settings
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']
 
+" YouCompleteMe settings
+set encoding=utf-8
+
