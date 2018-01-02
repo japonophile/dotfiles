@@ -1,6 +1,8 @@
 ---
 dotfile_files:
   - .ackrc
+  - .gitconfig
+  - .gitignore
   - .tmux.conf
   - .vim
   - .vimrc
