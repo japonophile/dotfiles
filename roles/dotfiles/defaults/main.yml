@@ -1,0 +1,7 @@
+---
+dotfile_files:
+  - .ackrc
+  - .tmux.conf
+  - .vim
+  - .vimrc
+
