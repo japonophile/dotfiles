@@ -6,4 +6,6 @@ dotfile_files:
   - .tmux.conf
   - .vim
   - .vimrc
+  - .zsh
+  - .zshrc
 
