@@ -67,6 +67,8 @@ nnoremap <leader>e :Eval<CR>
 
 nnoremap <leader>n :NERDTree<CR>
 
+nnoremap <leader>b :call JsBeautify()<CR>
+
 "colorscheme tayra
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
