@@ -13,6 +13,13 @@ VIRTUALENV_ACTIVATE=$VIRTUALENV_TARGET_DIR/bin/activate
 
 DEV_NULL=/dev/null
 
+while [ $# -gt 0 ]; do
+  if [ "$1" = '--force' -o "$1" = '-f' ]; then
+    FORCE=1
+  fi
+  shift
+done
+
 if [ ! -e $VIRTUALENV_SETUP ]; then
   echo "Not found: $VIRTUALENV_SETUP"
   echo "Did you forget to 'git submodule update --init --recursive'?"
