@@ -57,3 +57,6 @@
 [submodule "roles/dotfiles/files/.vim/bundle/vim-jsbeautify"]
 	path = roles/dotfiles/files/.vim/bundle/vim-jsbeautify
 	url = https://github.com/maksimr/vim-jsbeautify.git
+[submodule "roles/dotfiles/files/.vim/bundle/vim-surround"]
+	path = roles/dotfiles/files/.vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
