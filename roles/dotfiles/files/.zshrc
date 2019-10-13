@@ -79,3 +79,18 @@ export SAVEHIST=$HISTSIZE
 
 BASE16_SHELL=$HOME/.zsh/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
+eval "$(rbenv init -)"
+
+# Load nvm function into the shell
+# export NVM_DIR=~/.nvm
+# source $(brew --prefix nvm)/nvm.sh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+ulimit -n 8192
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
+eval "$(pyenv init -)"
+
+export GOPATH=$HOME/go

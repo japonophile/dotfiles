@@ -60,3 +60,9 @@
 [submodule "roles/dotfiles/files/.vim/bundle/vim-surround"]
 	path = roles/dotfiles/files/.vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "roles/dotfiles/files/.vim/bundle/coq.vim"]
+	path = roles/dotfiles/files/.vim/bundle/coq.vim
+	url = https://github.com/tounaishouta/coq.vim.git
+[submodule "roles/dotfiles/files/.vim/bundle/lark-vim"]
+	path = roles/dotfiles/files/.vim/bundle/lark-vim
+	url = https://github.com/RobRoseKnows/lark-vim.git

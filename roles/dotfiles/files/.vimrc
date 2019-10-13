@@ -115,6 +115,8 @@ au BufNewFile,BufRead *.ino set filetype=c
 au BufNewFile,BufRead *.sdf set filetype=xml
 au BufNewFile,BufRead *.launch set filetype=xml
 au BufNewFile,BufRead *.pxi set filetype=clojure
+au BufRead,BufNewFile *.g set filetype=antlr3
+au BufRead,BufNewFile *.g4 set filetype=antlr4
 
 " highlight current search in green
 highlight Search gui=underline ctermfg=green ctermbg=black cterm=bold,underline term=underline
@@ -130,3 +132,5 @@ let g:pymode_lint=0
 " YouCompleteMe settings
 set encoding=utf-8
 
+" For Coq
+autocmd Filetype coq nnoremap ,, :CoqRunToCursol<CR>
