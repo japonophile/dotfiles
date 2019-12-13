@@ -66,3 +66,6 @@
 [submodule "roles/dotfiles/files/.vim/bundle/coq.vim"]
 	path = roles/dotfiles/files/.vim/bundle/coq.vim
 	url = https://github.com/tounaishouta/coq.vim.git
+[submodule "roles/dotfiles/files/.vim/bundle/ale"]
+	path = roles/dotfiles/files/.vim/bundle/ale
+	url = https://github.com/dense-analysis/ale.git
