@@ -63,9 +63,24 @@
 [submodule "roles/dotfiles/files/.vim/bundle/lark-vim"]
 	path = roles/dotfiles/files/.vim/bundle/lark-vim
 	url = https://github.com/RobRoseKnows/lark-vim.git
-[submodule "roles/dotfiles/files/.vim/bundle/ale"]
-	path = roles/dotfiles/files/.vim/bundle/ale
-	url = https://github.com/dense-analysis/ale.git
 [submodule "roles/dotfiles/files/.vim/bundle/vim-metamath"]
 	path = roles/dotfiles/files/.vim/bundle/vim-metamath
 	url = https://github.com/david-a-wheeler/vim-metamath.git
+[submodule "roles/dotfiles/files/.vim/bundle/lean.vim"]
+	path = roles/dotfiles/files/.vim/bundle/lean.vim
+	url = https://github.com/leanprover/lean.vim.git
+[submodule "roles/dotfiles/files/.vim/bundle/vim-lsp"]
+	path = roles/dotfiles/files/.vim/bundle/vim-lsp
+	url = https://github.com/prabirshrestha/vim-lsp.git
+[submodule "roles/dotfiles/files/.vim/bundle/async.vim"]
+	path = roles/dotfiles/files/.vim/bundle/async.vim
+	url = https://github.com/prabirshrestha/async.vim.git
+[submodule "roles/dotfiles/files/.vim/bundle/vim-lsp-settings"]
+	path = roles/dotfiles/files/.vim/bundle/vim-lsp-settings
+	url = https://github.com/mattn/vim-lsp-settings.git
+[submodule "roles/dotfiles/files/.vim/bundle/asyncomplete.vim"]
+	path = roles/dotfiles/files/.vim/bundle/asyncomplete.vim
+	url = https://github.com/prabirshrestha/asyncomplete.vim.git
+[submodule "roles/dotfiles/files/.vim/bundle/asyncomplete-lsp.vim"]
+	path = roles/dotfiles/files/.vim/bundle/asyncomplete-lsp.vim
+	url = https://github.com/prabirshrestha/asyncomplete-lsp.vim.git

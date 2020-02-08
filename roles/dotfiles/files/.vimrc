@@ -42,10 +42,11 @@ nnoremap <Up> <Nop>
 nnoremap <Down> <Nop>
 nnoremap <Left> <Nop>
 nnoremap <Right> <Nop>
-inoremap <Up> <Nop>
-inoremap <Down> <Nop>
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
+" Keep arrow keys in insert mode for use with asyncomplete.vim
+" inoremap <Up> <Nop>
+" inoremap <Down> <Nop>
+" inoremap <Left> <Nop>
+" inoremap <Right> <Nop>
 
 " shortcut to follow link C-] does not work on Azerty
 nnoremap <C-T> <C-]>
@@ -145,3 +146,23 @@ autocmd Filetype coq nnoremap ,, :CoqRunToCursol<CR>
 " let g:syntastic_check_on_open = 1
 " let g:syntastic_check_on_wq = 0
 
+" *** vim-lsp ***
+" async.vim: needed by vim-lsp
+" vim-lsp: support Language Server Protocol in VIM
+" asyncomplete.vim: plugin for autocomplete (depending on vim-lsp)
+" asyncomplete-lsp.vim: provides vim-lsp as autocompletion source for asyncomplete.vim
+" vim-lsp-settings: auto configurations for Language Server for vim-lsp
+
+" add support for lean language
+if (executable('lean-language-server'))
+    " npm install -g lean-language-server
+    au User lsp_setup call lsp#register_server({
+                \ 'name': 'lean-language-server',
+                \ 'cmd': {server_info->['lean-language-server', '--stdio']},
+                \ 'whitelist': ['lean']
+                \ })
+endif
+
+let g:lsp_signs_error = {'text': '✗'}
+let g:lsp_signs_warning = {'text': '‼'}
+let g:lsp_signs_hint = {'text': '💡' }
