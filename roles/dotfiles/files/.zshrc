@@ -94,3 +94,5 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 eval "$(pyenv init -)"
 
 export GOPATH=$HOME/go
+export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/bin:$PATH"
