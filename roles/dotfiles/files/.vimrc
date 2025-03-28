@@ -104,7 +104,7 @@ let g:rbpt_colorpairs = [
     \ ['darkgreen',   'RoyalBlue3'],
     \ ]
 
-let g:notes_directories = ['~/Dropbox/Notes/LPixel']
+let g:notes_directories = ['~/Documents/Notes']
 let g:notes_conceal_url = 0
 
 autocmd StdinReadPre * let s:std_in=1
